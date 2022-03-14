@@ -1,0 +1,319 @@
+--Made By: Mag Developments™
+--Last Updated 3/13/22
+
+
+--Local -- Script
+local MagHub = Instance.new("ScreenGui")
+local UI = Instance.new("Frame")
+local RGBButtonBar = Instance.new("Frame")
+local BottomBar = Instance.new("Frame")
+local Heading = Instance.new("TextLabel")
+local SubHeading = Instance.new("TextLabel")
+local Enter = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Cancel = Instance.new("TextButton")
+local DropShadow = Instance.new("ImageLabel")
+local input = Instance.new("ImageButton")
+local TitleHeading = Instance.new("TextLabel")
+local TopBar = Instance.new("Frame")
+
+--Properties:
+
+MagHub.Name = "MagHub"
+MagHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+UI.Name = "UI"
+UI.Parent = MagHub
+UI.BackgroundColor3 = Color3.fromRGB(245, 245, 245)
+UI.BorderSizePixel = 0
+UI.Position = UDim2.new(0.357354164, 0, 0.353272945, 0)
+UI.Size = UDim2.new(0, 547, 0, 246)
+UI.ZIndex = 2
+
+RGBButtonBar.Name = "RGBButtonBar"
+RGBButtonBar.Parent = UI
+RGBButtonBar.BackgroundColor3 = Color3.fromRGB(0, 248, 195)
+RGBButtonBar.BorderSizePixel = 0
+RGBButtonBar.Position = UDim2.new(0, 0, 1.00813007, 0)
+RGBButtonBar.Size = UDim2.new(0, 547, 0, 4)
+RGBButtonBar.ZIndex = 100
+
+BottomBar.Name = "BottomBar"
+BottomBar.Parent = UI
+BottomBar.BackgroundColor3 = Color3.fromRGB(230, 230, 230)
+BottomBar.BorderSizePixel = 0
+BottomBar.Position = UDim2.new(0, 0, 0.715934992, 0)
+BottomBar.Size = UDim2.new(0, 547, 0, 72)
+BottomBar.ZIndex = 100
+
+Heading.Name = "Heading"
+Heading.Parent = UI
+Heading.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Heading.BackgroundTransparency = 1.000
+Heading.Position = UDim2.new(0.151736751, 0, 0.106312767, 0)
+Heading.Size = UDim2.new(0, 424, 0, 50)
+Heading.ZIndex = 100
+Heading.Font = Enum.Font.GothamSemibold
+Heading.Text = "ENTER"
+Heading.TextColor3 = Color3.fromRGB(67, 67, 67)
+Heading.TextSize = 24.000
+Heading.TextXAlignment = Enum.TextXAlignment.Left
+
+SubHeading.Name = "SubHeading"
+SubHeading.Parent = Heading
+SubHeading.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SubHeading.BackgroundTransparency = 1.000
+SubHeading.Position = UDim2.new(-0.00156515837, 0, 0.700000048, 0)
+SubHeading.Size = UDim2.new(0, 365, 0, 104)
+SubHeading.ZIndex = 101
+SubHeading.Font = Enum.Font.GothamSemibold
+SubHeading.Text = "You sure you want to open MagHub?"
+SubHeading.TextColor3 = Color3.fromRGB(125, 125, 125)
+SubHeading.TextSize = 18.000
+SubHeading.TextWrapped = true
+SubHeading.TextXAlignment = Enum.TextXAlignment.Left
+SubHeading.TextYAlignment = Enum.TextYAlignment.Top
+
+Enter.Name = "Enter"
+Enter.Parent = UI
+Enter.BackgroundColor3 = Color3.fromRGB(0, 248, 195)
+Enter.BorderSizePixel = 0
+Enter.Position = UDim2.new(0.705667257, 0, 0.799740911, 0)
+Enter.Size = UDim2.new(0, 140, 0, 36)
+Enter.ZIndex = 100
+Enter.AutoButtonColor = false
+Enter.Font = Enum.Font.GothamSemibold
+Enter.Text = "Enter"
+Enter.TextColor3 = Color3.fromRGB(0, 0, 0)
+Enter.TextSize = 18.000
+Enter.MouseButton1Click:Connect(function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/MagDevelopments/ObfuscatedByMoonSec_2/main/ProtectionSystem2"))()
+end)
+
+
+UICorner.CornerRadius = UDim.new(0, 7)
+UICorner.Parent = Enter
+
+Cancel.Name = "Cancel"
+Cancel.Parent = UI
+Cancel.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Cancel.BackgroundTransparency = 1.000
+Cancel.BorderSizePixel = 0
+Cancel.Position = UDim2.new(0.519195616, 0, 0.799740911, 0)
+Cancel.Size = UDim2.new(0, 96, 0, 36)
+Cancel.ZIndex = 100
+Cancel.AutoButtonColor = false
+Cancel.Font = Enum.Font.GothamSemibold
+Cancel.Text = "Cancel"
+Cancel.TextColor3 = Color3.fromRGB(67, 67, 67)
+Cancel.TextSize = 18.000
+
+DropShadow.Name = "DropShadow"
+DropShadow.Parent = UI
+DropShadow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DropShadow.BackgroundTransparency = 1.000
+DropShadow.BorderSizePixel = 0
+DropShadow.Position = UDim2.new(-0.107203014, 0, -0.125934839, 0)
+DropShadow.Size = UDim2.new(1.23537493, 0, 1.25, 0)
+DropShadow.Image = "rbxassetid://297694300"
+DropShadow.ImageTransparency = 0.500
+
+input.Name = "input"
+input.Parent = UI
+input.BackgroundTransparency = 1.000
+input.LayoutOrder = 4
+input.Position = UDim2.new(0.0637659952, 0, 0.138390243, 0)
+input.Size = UDim2.new(0, 36, 0, 36)
+input.ZIndex = 999999999
+input.Image = "rbxassetid://3926305904"
+input.ImageColor3 = Color3.fromRGB(0, 248, 195)
+input.ImageRectOffset = Vector2.new(764, 444)
+input.ImageRectSize = Vector2.new(36, 36)
+
+TitleHeading.Name = "TitleHeading"
+TitleHeading.Parent = UI
+TitleHeading.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TitleHeading.BackgroundTransparency = 1.000
+TitleHeading.Position = UDim2.new(0.489945054, 0, 0.0314481854, 0)
+TitleHeading.Size = UDim2.new(0, 179, 0, 18)
+TitleHeading.ZIndex = 100
+TitleHeading.Font = Enum.Font.GothamSemibold
+TitleHeading.Text = "By: Mag Developments™"
+TitleHeading.TextColor3 = Color3.fromRGB(67, 67, 67)
+TitleHeading.TextSize = 24.000
+TitleHeading.TextXAlignment = Enum.TextXAlignment.Left
+
+TopBar.Name = "TopBar"
+TopBar.Parent = UI
+TopBar.BackgroundColor3 = Color3.fromRGB(0, 248, 195)
+TopBar.BorderSizePixel = 0
+TopBar.Size = UDim2.new(0, 547, 0, 4)
+TopBar.ZIndex = 100
+
+-- Scripts:
+
+local function VOZIAI_fake_script() -- RGBButtonBar.Rainbow Effect  
+	local script = Instance.new('Script', RGBButtonBar)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.01
+	end
+
+
+end
+coroutine.wrap(VOZIAI_fake_script)()
+local function OAVJZKL_fake_script() -- Enter.Animate 
+	local script = Instance.new('LocalScript', Enter)
+
+	local noob = script.Parent
+
+
+	Tween = function(Obj, Time, Settings)	
+		game:GetService("TweenService"):Create(Obj, TweenInfo.new(Time), Settings):Play()
+	end
+
+
+	script.Parent.MouseEnter:Connect(function()
+		Tween(noob, 0.5, {BackgroundTransparency = 0.6})
+	end)
+
+	script.Parent.MouseLeave:Connect(function()
+		Tween(noob, 0.5, {BackgroundTransparency = 0.8})
+	end)
+end
+coroutine.wrap(OAVJZKL_fake_script)()
+local function AZTWP_fake_script() -- Enter.ClickForExploit 
+	local script = Instance.new('Script', Enter)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false 
+	end)
+
+end
+coroutine.wrap(AZTWP_fake_script)()
+local function RIENND_fake_script() -- Enter.Rainbow Effect  
+	local script = Instance.new('Script', Enter)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.01
+	end
+
+
+end
+coroutine.wrap(RIENND_fake_script)()
+local function IZNOGGE_fake_script() -- Cancel.Script 
+	local script = Instance.new('Script', Cancel)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false 
+	end)
+
+end
+coroutine.wrap(IZNOGGE_fake_script)()
+local function YYNKQP_fake_script() -- input.Image Rainbow Effect 
+	local script = Instance.new('Script', input)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.ImageColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.01
+	end
+
+
+end
+coroutine.wrap(YYNKQP_fake_script)()
+local function AGNNO_fake_script() -- UI.Dragify 
+	local script = Instance.new('LocalScript', UI)
+
+	local UIS = game:GetService("UserInputService")
+	local dragSpeed = -math.huge
+
+	local dragToggle = nil
+	local dragInput = nil
+	local dragStart = nil
+	local dragPos = nil
+
+	function dragify(Frame)
+		function updateInput(input)
+			local Delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			script.Parent.Position = Position
+		end
+
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+
+	dragify(script.Parent)
+end
+coroutine.wrap(AGNNO_fake_script)()
+local function DUNKIGS_fake_script() -- TitleHeading.Rainbow Effect 
+	local script = Instance.new('Script', TitleHeading)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.TextColor3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.01
+	end
+
+
+end
+coroutine.wrap(DUNKIGS_fake_script)()
+local function PGZERJH_fake_script() -- TopBar.Rainbow Effect  
+	local script = Instance.new('Script', TopBar)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.01
+	end
+
+
+end
+coroutine.wrap(PGZERJH_fake_script)()
